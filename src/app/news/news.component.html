@@ -1,0 +1,13 @@
+<!-- <div *ngFor="let aa of articles">
+  <h2>{{ aa.title }}</h2>
+  <p>
+    {{ aa.description }}
+  </p>
+  <a href="{{ aa.url }}">Read More</a>
+</div> -->
+<div class="block" *ngFor="let user of users">
+  <img src="{{ user.picture['thumbnail'] }}" alt="" />
+  <h2>{{ user.name["title"] }} {{ user.name["first"] }}</h2>
+  <p>{{ user.gender }}</p>
+  <p>{{ user.email }}</p>
+</div>
